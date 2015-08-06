@@ -57,7 +57,7 @@ body{
 #countdays {
     position: fixed;
     color: #f80;
-    z-index: 10;
+    z-index: 2;
     background-color: rgba(15,15,15,.7);
     width: 100%;
     text-align: center;
@@ -80,7 +80,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    z-index: 1;
     background: transparent url(images/pattern.png) repeat top left;
 }
 .cb-slideshow {
@@ -91,11 +91,8 @@ body{
     left: 0px;
     z-index: 0;
 }
-/*.cb-slideshow:after {
-    content: '';
-    background: transparent url(images/pattern.png) repeat top left;
-}*/
-.cb-slideshow li span {
+.cb-slideshow span {
+    display: block;
     width: 200%;
     height: 100%;
     position: absolute;
@@ -107,33 +104,33 @@ body{
     z-index: 0;
 	-webkit-backface-visibility: hidden;    
 }
-.cb-slideshow li span.rl {
+.cb-slideshow span.rl {
     -webkit-animation: imageAnimationRL 36s linear infinite 0s;
 }
-.cb-slideshow li span.lr {
+.cb-slideshow span.lr {
     -webkit-animation: imageAnimationLR 36s linear infinite 0s;
 }
-.cb-slideshow li:nth-child(1) span {
+.cb-slideshow span:nth-child(1) {
     background-image: url(images/1.jpg);
     -webkit-animation-delay: 0s;
 }
-.cb-slideshow li:nth-child(2) span {
+.cb-slideshow span:nth-child(2) {
     background-image: url(images/2.jpg);
     -webkit-animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) span {
+.cb-slideshow span:nth-child(3) {
     background-image: url(images/3.jpg);
     -webkit-animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) span {
+.cb-slideshow span:nth-child(4) {
     background-image: url(images/4.jpg);
     -webkit-animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) span {
+.cb-slideshow span:nth-child(5) {
     background-image: url(images/5.jpg);
     -webkit-animation-delay: 24s;
 }
-.cb-slideshow li:nth-child(6) span {
+.cb-slideshow span:nth-child(6) {
     background-image: url(images/6.jpg);
     -webkit-animation-delay: 30s;
 }
